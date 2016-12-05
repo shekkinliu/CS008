@@ -29,7 +29,9 @@
 
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:shek-kin.liu@uvm.edu">Ken Liu</a></p>
+            <a href="mailto:shek-kin.liu@uvm.edu?cc=shekkinliu@gmail.com&bcc=shekkin330@gmail.com
+               &amp;subject=Food%20Item%20Express&amp;body=Contact%20Me">
+                Ken Liu</a>
             <p> OR </p>
             <p><a href="mailto:rnawani@uvm.edu">Rohit Nawani</a></p>
         </div>
