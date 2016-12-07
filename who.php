@@ -20,9 +20,7 @@
              <img id="ken" src="image/ken.png" alt="">
             <h3>Ken Liu: </h3>
             <h6 >(pronouns: he/his/him)</h6>
-            <p>
-                Ken is a legend.
-            </p>
+            <p>Hey, what’s up? I am Ken, I am a HongKongese who moved into the United States 6 years ago with my parents. My life has changed throughout this transition from an urban environment to a suburban environment, learning English was kind of hard in the beginning, but I guess I did alright after making a few friends here. Whenever I have free time, I would play badminton and explore the art of photography. I am a big napping addict, who doesn’t like naps? I personally think that napping can help you to concentrate in work, especially when you have a huge workload, you don’t want to sacrifice too much sleep, right? For food preference, I am also an anti-GOP type of guy, my favorite food would be any kinds of desserts.</p>
             </div>
         </div>
         <?php include "footer.php"; ?>

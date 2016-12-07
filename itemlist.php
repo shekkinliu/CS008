@@ -7,7 +7,7 @@ if (isset($_GET["debug"])) {
     $debug = true;
 }
 
-$myFileName = "data/list.csv";
+$myFileName = "data/list";
 
 $fileExt = ".csv";
 
