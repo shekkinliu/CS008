@@ -1,7 +1,10 @@
 <?php ?>
 <!DOCTYPE html>
 <html lang="en">
-    <?php include "head.php"; ?>
+    <head>
+        <title>Sign Up - Midnight Delivery</title>
+        <?php include "head.php"; ?>
+    </head>
     <body>
         <div>
             <?php include "nav.php"; ?>
