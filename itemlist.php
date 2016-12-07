@@ -7,24 +7,25 @@ if (isset($_GET["debug"])) {
     $debug = true;
 }
 
-$myFileName = "data/list";
+$myFileName = "data/list.csv";
 
 $fileExt = ".csv";
 
 $filename = $myFileName . $fileExt;
 
-if ($debug)
+if ($debug){
     print "\n\n<p>filename is " . $filename;
-
+}
 $file = fopen($filename, "r");
 
 // the variable $file will be empty or false if the file does not open
 if ($file) {
-    if ($debug)
+    if ($debug){
         print "<p>File Opened</p>\n";
-    if ($debug)
+    }
+    if ($debug){
         print "<p>Begin reading data into an array.</p>\n";
-
+    }
     // This reads the first row, which in our case is the column headers
     $headers[] = fgetcsv($file);
 
