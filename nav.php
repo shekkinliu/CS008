@@ -7,7 +7,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">Food Item Express</a>
+            <div id="logoNname">
+            <img src="image/logo.png" id="navlogo"></img>
+            <a class="navbar-brand" href="#">Midnight Delivery</a>
+            </div>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -15,7 +18,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="why.php">Why are we here?</a></li>
+                        <li><a href="when.php">What is our schedule?</a></li>
                         <li><a href="who.php">Who made this cool site?</a></li>
                     </ul>
                 </li>
@@ -27,6 +30,7 @@
                         <li><a href="checkout.php">Checkout</a></li>
                     </ul>
                 </li>
+                 <li><a href="join.php">Join Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
