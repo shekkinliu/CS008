@@ -18,7 +18,7 @@
                 <li>Tell yourself “Hunger is for the weak” and then go sleep it off (what about the assignment that’s due tomorrow??)</li>
             </ul>
             <p>Well, thank god for Midnight Delivery and now you have an option. </p>
-            <p>Just hit us with the <s>DM</s> MD!!</p>
+            <p>Just hit us with the <acronym title="Direct Message"><s>DM</s></acronym> MD!!</p>
         <div>
                <p>MD offers the following:</p>
                <ul>

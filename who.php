@@ -13,7 +13,7 @@
             <img id= "rohit" src="image/Rohit1.jpg"  alt="">
             <h3>Rohit Nawani: </h3>
             <h6>(pronouns: he/his/him)</h6>
-            <p>Hi! Being a half-HongKongese and half-Indian brought up in Hong Kong who then studied abroad in England for 6 years, my life experience has been a blessing so far. Food, NBA and football (apparently known as “soccer” in America) and the Weeknd sums up my life. I do all kinds of food, except the obvious GOP (pickles, olives and ginger). Any kind of spicy food puts a smile on my face, especially Chinese Sichuan cuisine.  
+            <p>Hi! Being a half-HongKongese and half-Indian brought up in Hong Kong who then studied abroad in England for 6 years, my life experience has been a blessing so far. Food, NBA and football (apparently known as “soccer” in America) and the Weeknd sums up my life. I do all kinds of food, except the obvious <acronym title="Ginger, Olives and Pickles">GOP </acronym>. Any kind of spicy food puts a smile on my face, especially Chinese Sichuan cuisine.  
             </p>
             </div>
             <div class="left">
