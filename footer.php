@@ -47,10 +47,10 @@
 
         <div class="footer-icons">
 
-            <a href="https://www.facebook.com/UniversityofVermont/?fref=ts"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/uvmvermont?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/edu/university-of-vermont-19631"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/shekkinliu/FIE"><i class="fa fa-github"></i></a>
+            <a href="https://www.facebook.com/UniversityofVermont/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/uvmvermont?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/edu/university-of-vermont-19631" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/shekkinliu/FIE" target="_blank"><i class="fa fa-github"></i></a>
 
         </div>
 
