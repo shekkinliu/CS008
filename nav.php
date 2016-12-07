@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>                        
             </button>
             <div id="logoNname">
-            <img src="image/logo.png" id="navlogo"></img>
+            <img src="image/logo.png" id="navlogo">
             <a class="navbar-brand" href="#">Midnight Delivery</a>
             </div>
         </div>
