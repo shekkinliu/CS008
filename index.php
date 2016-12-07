@@ -23,7 +23,7 @@
             <p>Well, thank god for Midnight Delivery and now you have an option. </p>
             <p>Just hit us with the <acronym title="Direct Message"><s>DM</s></acronym> MD!!</p>
         <div>
-<<<<<<< HEAD
+
                <p>MD offers the following:</p>
                <ul>
                    <li>door-to-door delivery at flexible time</li>
@@ -59,7 +59,7 @@
                 <li>Staffs should not only serve well with the main purpose of earning more tips but with genuine hospitality that comes from the bottom of their hearts. </li>
                 
             </ol>
-=======
+
             <p>MD offers the following:</p>
             <ul>
                 <li>door-to-door delivery at flexible time</li>
@@ -69,8 +69,8 @@
                 <li>strives to import food options from out of states (snacks/simple meal from foreign countries)</li>
                 <li><strong>DO</strong> not accept tips<a href="#tipping">**</a></li>
             </ul>
->>>>>>> origin/master
-        </div>
+
+
 
         <p id="tipping">**</p>
         <p>“Would you like a smile with your General Tsao chicken with rice? That would be extra 10%. Thanks ”</p>
@@ -82,7 +82,7 @@
             <li>Staffs should not only serve well with the main purpose of earning more tips but with genuine hospitality that comes from the bottom of their hearts. </li>
 
         </ol>
-    </div>
+</div>
     <?php include "footer.php"; ?>
 </body>
 </html>
