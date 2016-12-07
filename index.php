@@ -30,7 +30,21 @@
                    <li><strong>DO</strong> not accept tips<a href="#tipping">**</a></li>
                </ul>
         </div>
-            
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        <p>blablablablablablablablablablablabla</p>
+        
+        
+        
             <p id="tipping">**</p>
             <p>“Would you like a smile with your General Tsao chicken with rice? That would be extra 10%. Thanks ”</p>
             <p>-->MD strongly rejects the idea of tipping and we are promoting a non-tipping culture due to the following reasons:</p>
