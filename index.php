@@ -27,12 +27,11 @@
                    <li>credit/debit payment or cash </li>
                    <li>we provide price comparison of our items with on-campus diner</li>
                    <li>strives to import food options from out of states (snacks/simple meal from foreign countries)</li>
-                   <li><strong>DO</strong> not accept tips**</li>
+                   <li><strong>DO</strong> not accept tips<a href="#tipping">**</a></li>
                </ul>
-
         </div>
-        <div>
-            <p>**</p>
+            
+            <p id="tipping">**</p>
             <p>“Would you like a smile with your General Tsao chicken with rice? That would be extra 10%. Thanks ”</p>
             <p>-->MD strongly rejects the idea of tipping and we are promoting a non-tipping culture due to the following reasons:</p>
             <ol>
@@ -42,7 +41,6 @@
                 <li>Staffs should not only serve well with the main purpose of earning more tips but with genuine hospitality that comes from the bottom of their hearts. </li>
                 
             </ol>
-        </div>
         </div>
         <?php include "footer.php"; ?>
     </body>

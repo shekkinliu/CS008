@@ -11,7 +11,28 @@ body{
     width: 40%;
     height: auto;
     float: right;
-}#navlogo {
+    margin-left: 1em;
+}
+
+#ken{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-right: 1em;
+    
+}
+.left{
+    float:left;
+}
+.bold{
+    font-weight: bold;
+}
+.border{
+    border-bottom: #193450;
+    border-bottom-style: double;
+    margin-bottom: 5em;
+}
+#navlogo {
     float:left;
     margin-right: 1em;
     height: 50px;
