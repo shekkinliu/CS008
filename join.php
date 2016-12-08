@@ -1,3 +1,10 @@
+
+<!-- Hey, yo, Ro. Work on the followings requirements for the form. Thank! -->
+<!-- Data should be validated for not missing, valid format etc as needed with php, appropriate error messages will be displayed. -->
+<!-- Form should email the person who filled it out. -->
+<!-- Form data should be saved to a csv file. Provide a link to this file on your main index. -->
+<!-- Forms always need to provide feedback to the user so they know what happened after filling out the form. -->
+
 <?php ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,16 +68,18 @@
                         <legend>Questions:</legend>
                         Which type of job do you want to work on?
                         <br>
-                        <input list="job" name="job">
-                        <datalist id="job">
-                            <option value="Front End">
-                            <option value="Back End">     
-                        </datalist>
+                        <input type="radio" name="job" value="frontend"> Front End.<br>
+                        <input type="radio" name="job" value="backend"> Back End.<br>
+                        <input type="radio" name="job" value="noend"> I don't want a job.
                         <br>
                         <br>
                         How did you know about us?
-                        <br>
-                        <input type="text" name="knowabout">
+                        <input type="checkbox" name="knowabout" value="classmates">Classmates<br>
+                        <input type="checkbox" name="knowabout" value="facebook">Facebook<br>
+                        <input type="checkbox" name="knowabout" value="posters">Posters<br>
+                        <input type="checkbox" name="knowabout" value="instagram">Instagram<br>
+                        <input type="checkbox" name="knowabout" value="twitter">Twitter<br>
+                        <input type="checkbox" name="knowabout" value="other">Other
                         <br>
                         <br>
                         Any comment(s):
