@@ -114,3 +114,7 @@ table{
 #topbar{
     z-index: 1;
 }
+
+#myslider{
+    z-index:0;
+}
