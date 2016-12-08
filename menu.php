@@ -67,30 +67,30 @@ if ($file) {
         </div>
         <div id="menu" class="container textcolor centertext" style="margin-top: 80px;">
             <h3 class="bold">Menu Page</h3>
-            <h6 class="border"> ~~Click on the image for more detail~~</h6>
+            <h6> ~~Click on the image for more detail~~</h6>
+            <br>
+            <br>
             <div id='imagelist'>
                 <?php
-                print "<ul>";
-
                 foreach ($food as $item) {
-                    print "<li>";
-                    print '<a href="#' . $item[6] . '">';
+                    print '<a href="#' . $item[2] . '">';
                     print '<img src="' . $item[4] . '" alt="' . $item[1] . '">';
                     print '</a>';
-                    print "</li>";
                 }
-                print "</ul>";
                 ?>
             </div>
+            <br>
+            <br>
+            <br>
             <div id="menutable">
                 <?php
                 print "<table id='menutable'>";
-                print "<tr><th>Item ID</th><th>Food Item</th><th>Price ($)</th><th>Weight (Ounce)</th><th>Image</th></tr>";
+                print "<tr><th>Item ID</th><th>Food Item</th><th>Price <sub>($)</sub></th><th>Weight <sub>(Ounce)</sub></th><th>Image</th></tr>";
 
                 foreach ($food as $item) {
                     print "<tr>";
 
-                    print '<td id="' . $item[6] . '">';
+                    print '<td id="' . $item[2] . '">';
                     print $item[0];
                     print "</td>";
 
