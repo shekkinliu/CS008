@@ -30,7 +30,16 @@
                         <li><a href="checkout.php">Checkout</a></li>
                     </ul>
                 </li>
-                <li><a href="hiring.php">We are hiring</a></li>
+                
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Career<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="hiring.php">We are hiring</a></li>
+                        <li><a href="position.php">Listed Positions</a></li>
+                    </ul>
+                </li>
+                           
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
