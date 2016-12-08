@@ -30,7 +30,7 @@
                         <li><a href="checkout.php">Checkout</a></li>
                     </ul>
                 </li>
-                 <li><a href="join.php">Join Us</a></li>
+                <li><a href="hiring.php">We are hiring</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

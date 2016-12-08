@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Join Us - Midnight Delivery</title>
+        <title>We are hiring - Midnight Delivery</title>
         <?php include "head.php"; ?>
     </head>
     <body>
@@ -17,21 +17,21 @@
             <?php include "nav.php"; ?>
         </div>
         <div class="container" style="margin-top: 80px;">
-            <h1>Join us Today!!!</h1>
+            <h1>We are hiring</h1>
             <form action="action_page.php">
                 <fieldset>
                     <fieldset>
                         <legend>Personal information:</legend>
                         First name:
-                        <input type="text" name="firstname">
+                        <input type="text" 
+                               name="firstname"
+                               placeholder="Enter your first name">
                         <br>
-                        <br>
-                        Middle name:
-                        <input type="text" name="middlename">
-                        <br>
-                        <br>
+                        <br>                   
                         Last name:
-                        <input type="text" name="lastname">
+                        <input type="text" 
+                               name="lastname"
+                               placeholder="Enter your last name">
                         <br>
                         <br>
                         Preferred Pronoun:
@@ -39,7 +39,7 @@
                         <br>
                         <br>
                         Email:
-                        <input type="text" name="email">
+                        <input type="email" name="email">
                         <br>
                         <br>
                         Phone Number:
