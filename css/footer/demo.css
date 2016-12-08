@@ -86,11 +86,11 @@ header ul li{
 /* In our demo, the footers are fixed to the bottom of the page */
 
 footer{
-	position: fixed;
 	bottom: 0;
+        position: fixed;
 }
 
 @media (max-height:800px){
-	footer { position: static; }
+	footer { position: relative; }
 	header { padding-top:40px; }
 }
