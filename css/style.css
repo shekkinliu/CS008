@@ -80,21 +80,19 @@ body{
     width: 300px;
     border: 1px solid #193450;
     border-radius: 10px;
-    padding: 20px;
-    text-align: right;
+    padding: 10px 10px 10px 10px ;
+    text-align: center;
     margin: auto;
 }
 #login legend{
-    height: 50px;
+    height: 40px;
+    width: 100px;
     color: #9d9d9d;
-    margin: auto;
-    width: 50%;
     background-color: #193450;
     opacity: 0.8;
     border-radius: 10px;
-    padding: 10px ;
-    text-align: left;
     text-transform: uppercase;
+    text-align: center;
 }
 td img{
     height: 120px;
@@ -114,7 +112,9 @@ table{
 #topbar{
     z-index: 1;
 }
-
+#welcomestyle{
+    font-family:  Verdana,Helvetica, sans-serif;
+}
 #myslider{
     z-index:0;
 }

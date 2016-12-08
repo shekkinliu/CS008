@@ -10,6 +10,9 @@
             <?php include "nav.php"; ?>
         </div>
         <div class="container" style="margin-top: 80px;">
+            <center><h1 id="welcomestyle">Welcome back<br> Our beloved customer</h1></center>
+            <br>
+            <br>
             <form action="action_page.php">
                 <fieldset id="login">
                     <legend>Login:</legend>
@@ -18,7 +21,6 @@
                            type="text"
                            name="username"
                            >
-                    <br>
                     <label for="password">Password:</label>
                     <input id="password"
                            type="password"
