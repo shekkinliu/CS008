@@ -1,0 +1,11 @@
+List,name,price ($),weight (Ounce),source,Nutrition facts (source),,Order
+1,Oreo Double Stuf Chocolate Sandwich Cookies,2.79,15.35,image/oreo.jpg,image/NForeo.jpg,,one
+2,Pepperidge Farm Goldfish Crackers Cheddar,9.98,45,image/gf.jpg,image/NFgf.jpg,,two
+3,"Ritz Crackers, Original",3.22,20.6,image/ritz.jpg,image/NFritz.jpg,,three
+4,"Pepperidge Farm Milano Cookies, Double Chocolate",2.5,7.5,image/milano.jpg,image/NFmilano.jpg,,four
+5,M&M'S Pretzel Chocolate Candy ,9.99,30,image/mnmpretzel.jpg,image/NFmnmpretzel.jpg,,five
+6,"Ben & Jerry's, Chocolate Fudge Brownie Ice Cream (Frozen)",4.99,16,image/BJ.jpg,image/NFBJ.jpg,,six
+7,"Doritos Flavored Tortilla Chips, Party Size Nacho Cheese",3.3,15.5,image/doritos.jpg,image/NFdoritos.jpg,,seven
+8,"Cheetos Cheese Snacks, Party Size Crunchy",3.99,17.5,image/cheetos.jpg,image/NFcheetos.jpg,,eight
+9,"Chips Ahoy! Mini Chocolate Chip Cookies, (Pack of 12)",3.92,1,image/CA.jpg,image/NFCA.jpg,,nine
+10,"Reeses Puffs Cereal, Peanut Butter",3.58,22.9,image/RP.jpg,image/NFRP.jpg,,ten

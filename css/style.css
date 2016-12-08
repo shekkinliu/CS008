@@ -24,8 +24,15 @@ body{
 .left{
     float:left;
 }
+
+.right{
+    float:right;
+}
 .bold{
     font-weight: bold;
+}
+.centertext{
+    text-align: center;
 }
 .border{
     border-bottom: #193450;
@@ -44,4 +51,26 @@ body{
 }
 #asideright{
     float:right ;
+}
+#menu th{
+    text-align: center;
+}
+
+.textcolor{
+    color: #193450;
+}
+#imagelist li{
+    float: left;
+    list-style-type: none;
+    width: 250px;
+    height: 250px;
+}
+#imagelist{
+    margin-bottom: 5em;
+    position: relative;
+}
+
+#menutable{
+    margin-top: 5em;
+    position: relative;  
 }

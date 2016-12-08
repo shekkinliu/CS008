@@ -25,7 +25,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ordering<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="itemlist.php">Item List</a></li>
+                        <li><a href="menu.php">Menu</a></li>
                         <li><a href="shopping.php">Shopping</a></li>
                         <li><a href="checkout.php">Checkout</a></li>
                     </ul>
