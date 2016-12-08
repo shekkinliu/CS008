@@ -38,13 +38,12 @@
         // notice this if statemtent only includes the functions if it is 
         // form page. A common mistake is to make a form and call the page
         // join.php which means you need to change it below (or delete the if)
-        if ($path_parts['filename'] == "form") {
-            print "<!-- include form libraries -->";
-            include "lib/validation-functions.php";
-        }
+        //if ($path_parts['filename'] == "form") {
+        print "<!-- include form libraries -->";
+        include "lib/validation-functions.php";
+        //}
         print "<!-- finished including libraries -->";
-        ?>	
-        <?php
+
         include "head.php";
         ?>
     </head>
@@ -161,128 +160,128 @@
 
 
 
-            if ($email == "") {
-                $errorMsg[] = "Please enter your email address";
-                $emailERROR = true;
-            } elseif (!verifyEmail($email)) {
-                $errorMsg[] = "Your email address appears to be incorrect.";
-                $emailERROR = true;
+        if ($email == "") {
+            $errorMsg[] = "Please enter your email address";
+            $emailERROR = true;
+        } elseif (!verifyEmail($email)) {
+            $errorMsg[] = "Your email address appears to be incorrect.";
+            $emailERROR = true;
+        }
+
+
+        //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        //
+     // SECTION: 2d Process Form - Passed Validation
+        //
+     // Process for when the form passes validation (the errorMsg array is empty)
+        //    
+        if (!$errorMsg) {
+            if ($debug)
+                print "<p>Form is valid</p>";
+
+
+
+
+            //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            //
+         // SECTION: 2e Save Data
+            //
+         // This block saves the data to a CSV file. 
+            $fileExt = ".csv";
+            $myFileName = "data/registeration"; // NOTE YOU MUST MAKE THE FOLDER !!!
+
+            $filename = $myFileName . $fileExt;
+
+            if ($debug) {
+                print "\n\n<p>filename is " . $filename;
+            }
+
+
+            // now we just open the file for append
+            $file = fopen($filename, 'a');
+
+            // write the forms informations
+            fputcsv($file, $dataRecord);
+
+            // close the file
+            fclose($file);
+
+            //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            //
+         // SECTION: 2f Create message
+            //
+         // build a message to display on the screen in section 3a and to mail
+            // to the person filling out the form (section 2g).
+            // 
+            $message = '<h2>Thank you for your interest in our organisation.</h2>';
+
+            foreach ($_POST as $key => $value) {
+                $message .= "<p>";
+
+                // breaks up the form names into words. for example
+                // txtFirstName becomes First Name
+                $camelCase = preg_split('/(?=[A-Z])/', substr($key, 3));
+
+                foreach ($camelCase as $one) {
+                    $message .= $one . " ";
+                }
+
+                $message .= " = " . htmlentities($value, ENT_QUOTES, "UTF-8") . "</p>";
             }
 
 
             //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
             //
-     // SECTION: 2d Process Form - Passed Validation
-            //
-     // Process for when the form passes validation (the errorMsg array is empty)
-            //    
-            if (!$errorMsg) {
-                if ($debug)
-                    print "<p>Form is valid</p>";
-
-
-
-
-                //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                //
-         // SECTION: 2e Save Data
-                //
-         // This block saves the data to a CSV file. 
-                $fileExt = ".csv";
-                $myFileName = "data/registeration"; // NOTE YOU MUST MAKE THE FOLDER !!!
-
-                $filename = $myFileName . $fileExt;
-
-                if ($debug) {
-                    print "\n\n<p>filename is " . $filename;
-                }
-
-
-                // now we just open the file for append
-                $file = fopen($filename, 'a');
-
-                // write the forms informations
-                fputcsv($file, $dataRecord);
-
-                // close the file
-                fclose($file);
-
-                //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                //
-         // SECTION: 2f Create message
-                //
-         // build a message to display on the screen in section 3a and to mail
-                // to the person filling out the form (section 2g).
-                // 
-                $message = '<h2>Thank you for your interest in our organisation.</h2>';
-
-                foreach ($_POST as $key => $value) {
-                    $message .= "<p>";
-
-                    // breaks up the form names into words. for example
-                    // txtFirstName becomes First Name
-                    $camelCase = preg_split('/(?=[A-Z])/', substr($key, 3));
-
-                    foreach ($camelCase as $one) {
-                        $message .= $one . " ";
-                    }
-
-                    $message .= " = " . htmlentities($value, ENT_QUOTES, "UTF-8") . "</p>";
-                }
-
-
-                //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-                //
          // SECTION: 2g Mail to user
-                //
+            //
          // Process for mailing a message which contains the forms data
-                // the message was built in section 2f.
-                $to = $email; // the person who filled out the form
-                $cc = "";
-                $bcc = "";
+            // the message was built in section 2f.
+            $to = $email; // the person who filled out the form
+            $cc = "";
+            $bcc = "";
 
-                $from = "Midnight Delivery";
+            $from = "Midnight Delivery";
 
-                // subject of mail should make sense to your form
-                $todaysDate = strftime("%x");
-                $subject = "Your Midnight Delivery application " . $todaysDate;
+            // subject of mail should make sense to your form
+            $todaysDate = strftime("%x");
+            $subject = "Your Midnight Delivery application " . $todaysDate;
 
-                $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
-            }// end form is valid
-        } // ends if form was submitted.
+            $mailed = sendMail($to, $cc, $bcc, $from, $subject, $message);
+        }// end form is valid
+    } // ends if form was submitted.
 //#############################################################################
 //
-        // SECTION 3 Display Form
+    // SECTION 3 Display Form
 //
-        ?>
+    ?>
 
-        <body>
-            <div>
-                <?php include "nav.php"; ?>
-            </div>
-            <?php
-            //####################################
-            //
+    <body>
+        <div>
+            <?php include "nav.php"; ?>
+        </div>
+        <?php
+        //####################################
+        //
      // SECTION 3a. 
-            // 
-            // If its the first time coming to the form or there are errors we are going
-            // to display the form.
-            if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked with: end body submit 
-                print "<h2>Thank you for submitting your application.</h2>";
+        // 
+        // If its the first time coming to the form or there are errors we are going
+        // to display the form.
+        if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked with: end body submit 
+            print "<h2>Thank you for submitting your application.</h2>";
 
-                print "<p>For your records a copy of this data has ";
+            print "<p>For your records a copy of this data has ";
 
-                if (!$mailed) {
-                    print "not ";
-                }
-
-                print "been sent:</p>";
-                print "<p>To: " . $email . "</p>";
-
-                print $message;
-            } else {
-                
+            if (!$mailed) {
+                print "not ";
             }
+
+            print "been sent:</p>";
+            print "<p>To: " . $email . "</p>";
+
+            print $message;
+        } else {
+
+
 
 
             //####################################
@@ -323,7 +322,7 @@
             <div class="container" style="margin-top: 80px;">
                 <h1 class="welcomestyle">We are hiring</h1>
                 <h4>More information on the <a href="position.php">hiring positions</a></h4>
-                <form action="action_page.php">
+                <form action="">
                     <fieldset id="form">
                         <fieldset>
                             <legend>Personal information:</legend>
@@ -352,12 +351,12 @@
                                    size="25">
                             <br>
                             <br>
-                            <label class="required" for="txtEmail">Email:</label>
+                            <label for="txtEmail">Email:</label>
                             <input id="txtEmail" 
                             <?php if ($emailERROR) print 'class="mistake"'; ?>
-                                   type="email" 
+                                   type="text" 
                                    name="txtEmail"
-                                   required="required"
+
                                    placeholder="starboy@email.com">
                             <br>
                             <br>
@@ -412,10 +411,13 @@
                             <br>
                             <br>
                         </fieldset>
-                        <input type="submit" value=" Submit my application ">
+                        <input type="submit" name="btnSubmit" value=" Submit my application ">
                     </fieldset>
                 </form>
             </div>
-            <?php include "footer.php"; ?>
+            <?php
+        }
+        include "footer.php";
+        ?>
     </body>
 </html>
