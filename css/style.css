@@ -22,13 +22,6 @@ body{
     margin-right: 1em;
 
 }
-.left{
-    float:left;
-}
-
-.right{
-    float:right;
-}
 .bold{
     font-weight: bold;
 }
@@ -135,27 +128,12 @@ table{
     text-transform: uppercase;
     text-align: center;
 }
-#topbox{
-    width: 940px;
-    border-bottom:#193450;
-    border-bottom-style: solid;
-    
-}
-#mid1box{
-    width: 300px;
-    
-}
-#mid2box{
-    width: 300px;
-    
-}
-#bottombox{
-    width: 940px;
-    position: absolute;
-    bottom: 70px;
-    border: 3px solid #193450;
-}
-
 #hungry{
-    width: 300px;
+    width: 30%;
+    height:auto;
+}
+#allowContent img{
+    width:30%;
+    height:auto;
+    float:left;
 }
