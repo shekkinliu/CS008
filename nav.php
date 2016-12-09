@@ -27,7 +27,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="menu.php">Menu</a></li>
                         <li><a href="shopping.php">Shopping</a></li>
-                        <li><a href="checkout.php">Checkout</a></li>
+                        <!--<li><a href="checkout.php">Checkout</a></li>-->
                     </ul>
                 </li>
                 
@@ -35,14 +35,14 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Career<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="hiring.php">We are hiring</a></li>
+                        <!--<li><a href="hiring.php">We are hiring</a></li>-->
                         <li><a href="position.php">Listed Positions</a></li>
                     </ul>
                 </li>
                            
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="signup.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="hiring.php"><span class="glyphicon glyphicon-user"></span> Sign Up for Job</a></li>
                 <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>

@@ -10,7 +10,7 @@
             <?php include "nav.php"; ?>
         </div>
         <div class="container" style="margin-top: 80px;">
-            <p>This will be a page of only listed positions.</p>
+            <p>More job positions will be available, please be patient, and come back to check in a week... Thank you!</p>
         </div>
         <?php include "footer.php"; ?>
     </body>

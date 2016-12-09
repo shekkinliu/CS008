@@ -10,6 +10,108 @@
 <html lang="en">
     <head>
         <title>We are hiring - Midnight Delivery</title>
+
+    <body>
+        <div>
+            <?php include "nav.php"; ?>
+        </div>
+        
+            <div class="container" style="margin-top: 80px;">
+                <h1 class="welcomestyle">We are hiring</h1>
+                <h4>More information on the <a href="position.php">hiring positions</a></h4>
+                <form action="">
+                    <fieldset id="form">
+                        <fieldset>
+                            <legend>Personal information:</legend>
+                            <label for="firstname">First name:</label>
+                            <input id="firstname"
+                                   type="text" 
+                                   name="firstname"
+                                   placeholder="Enter your first name"
+                                   size="20">
+                            <br>
+                            <br>                   
+                            <label for="lastname">Last name:</label>
+                            <input 
+                                id="lastname"
+                                type="text" 
+                                name="lastname"
+                                placeholder="Enter your last name"
+                                size="20">
+                            <br>
+                            <br>
+                            <label for="pronoun">Preferred Pronoun:</label>
+                            <input id="pronoun"
+                                   type="text" 
+                                   name="pronoun"
+                                   placeholder="Enter your preferred pronoun"
+                                   size="25">
+                            <br>
+                            <br>
+                            <label for="txtEmail">Email:</label>
+                            <input id="txtEmail" 
+                            <?php if ($emailERROR) print 'class="mistake"'; ?>
+                                   type="text" 
+                                   name="txtEmail"
+
+                                   placeholder="starboy@email.com">
+                            <br>
+                            <br>
+                            <label for="phone">Phone Number:</label>
+                            <input id="phone" 
+                                   type="text" 
+                                   name="phone"
+                                   placeholder="802-123-1234">
+                            <br>
+                            <br>
+                            <label for="resume">Upload your resume:</label>                       
+                            <input 
+                                type="file" 
+                                name="fileToUpload" 
+                                id="resume">
+                            <br>
+                            <br>
+                            <label for="campus">Which campus do you live in at UVM? You can refer to this <a href="https://reslife.uvm.edu/halls" target="_blank">link</a>.</label>
+                            <br>
+                            <select name="campus" size="5">
+                                <option value="Athletic Campus">Athletic Campus</option>
+                                <option value="Central Campus">Central Campus</option>
+                                <option value="North Campus">North Campus</option>
+                                <option value="Redstone Campus">Redstone Campus</option>
+                                <option value="Other Locations">Other Locations</option>   
+                            </select>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Questions:</legend>
+                            <label for="radJob">Which type of job do you want to work on?</label>
+                            <br>
+                            <input type="radio" name="radJob" value="frontend"> Front End<br>
+                            <input type="radio" name="radJob" value="backend"> Back End<br>
+                            <input type="radio" name="radJob" value="noend"> I don't want a job
+                            <br>
+                            <br>
+                            <label for="knowabout">How did you know about us?</label><br>
+                            <input type="checkbox" name="knowabout" value="classmates">Classmates<br>
+                            <input type="checkbox" name="knowabout" value="facebook">Facebook<br>
+                            <input type="checkbox" name="knowabout" value="posters">Posters<br>
+                            <input type="checkbox" name="knowabout" value="instagram">Instagram<br>
+                            <input type="checkbox" name="knowabout" value="twitter">Twitter<br>
+                            <input type="checkbox" name="knowabout" value="other">Other
+                            <br>
+                            <br>
+                            Any comment(s):
+                            <br>
+                            <textarea name="comment" rows="5" cols="30"></textarea>
+                            <br>
+                            <br>
+                            <br>
+                        </fieldset>
+                        <input type="submit" name="btnSubmit" value=" Submit my application ">
+                    </fieldset>
+                </form>
+            </div>
         <?php
         //// %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
@@ -52,7 +154,9 @@
     <!-- #############  DON'T MISS OUT ##############################-->
     <!-- #############  IT'S RIGHT HERE #############################-->
     <!-- #############  YES YOU GOT IT NOW ##########################-->
+    <!--
     <?php
+    /*
 //%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%
 //
 // SECTION: 1 Initialize variables
@@ -253,12 +357,13 @@
 //
     // SECTION 3 Display Form
 //
+    */
     ?>
-
-    <body>
-        <div>
-            <?php include "nav.php"; ?>
-        </div>
+    
+            <?php
+        
+        include "footer.php";
+        ?>
         <?php
         //####################################
         //
@@ -318,106 +423,7 @@
               this prints out a css class so that we can highlight the background etc. to
               make it stand out that a mistake happened here.
              */
-            ?>
-            <div class="container" style="margin-top: 80px;">
-                <h1 class="welcomestyle">We are hiring</h1>
-                <h4>More information on the <a href="position.php">hiring positions</a></h4>
-                <form action="">
-                    <fieldset id="form">
-                        <fieldset>
-                            <legend>Personal information:</legend>
-                            <label for="firstname">First name:</label>
-                            <input id="firstname"
-                                   type="text" 
-                                   name="firstname"
-                                   placeholder="Enter your first name"
-                                   size="20">
-                            <br>
-                            <br>                   
-                            <label for="lastname">Last name:</label>
-                            <input 
-                                id="lastname"
-                                type="text" 
-                                name="lastname"
-                                placeholder="Enter your last name"
-                                size="20">
-                            <br>
-                            <br>
-                            <label for="pronoun">Preferred Pronoun:</label>
-                            <input id="pronoun"
-                                   type="text" 
-                                   name="pronoun"
-                                   placeholder="Enter your preferred pronoun"
-                                   size="25">
-                            <br>
-                            <br>
-                            <label for="txtEmail">Email:</label>
-                            <input id="txtEmail" 
-                            <?php if ($emailERROR) print 'class="mistake"'; ?>
-                                   type="text" 
-                                   name="txtEmail"
-
-                                   placeholder="starboy@email.com">
-                            <br>
-                            <br>
-                            <label for="phone">Phone Number:</label>
-                            <input id="phone" 
-                                   type="text" 
-                                   name="phone"
-                                   placeholder="802-123-1234">
-                            <br>
-                            <br>
-                            <label for="resume">Upload your resume:</label>                       
-                            <input 
-                                type="file" 
-                                name="fileToUpload" 
-                                id="resume">
-                            <br>
-                            <br>
-                            <label for="campus">Which campus do you live in at UVM? You can refer to this <a href="https://reslife.uvm.edu/halls" target="_blank">link</a>.</label>
-                            <br>
-                            <select name="campus" size="5">
-                                <option value="Athletic Campus">Athletic Campus</option>
-                                <option value="Central Campus">Central Campus</option>
-                                <option value="North Campus">North Campus</option>
-                                <option value="Redstone Campus">Redstone Campus</option>
-                                <option value="Other Locations">Other Locations</option>   
-                            </select>
-                            <br>
-                            <br>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Questions:</legend>
-                            <label for="radJob">Which type of job do you want to work on?</label>
-                            <br>
-                            <input type="radio" name="radJob" value="frontend"> Front End<br>
-                            <input type="radio" name="radJob" value="backend"> Back End<br>
-                            <input type="radio" name="radJob" value="noend"> I don't want a job
-                            <br>
-                            <br>
-                            <label for="knowabout">How did you know about us?</label><br>
-                            <input type="checkbox" name="knowabout" value="classmates">Classmates<br>
-                            <input type="checkbox" name="knowabout" value="facebook">Facebook<br>
-                            <input type="checkbox" name="knowabout" value="posters">Posters<br>
-                            <input type="checkbox" name="knowabout" value="instagram">Instagram<br>
-                            <input type="checkbox" name="knowabout" value="twitter">Twitter<br>
-                            <input type="checkbox" name="knowabout" value="other">Other
-                            <br>
-                            <br>
-                            Any comment(s):
-                            <br>
-                            <textarea name="comment" rows="5" cols="30"></textarea>
-                            <br>
-                            <br>
-                            <br>
-                        </fieldset>
-                        <input type="submit" name="btnSubmit" value=" Submit my application ">
-                    </fieldset>
-                </form>
-            </div>
-            <?php
         }
-        include "footer.php";
-        ?>
+            ?>
     </body>
 </html>
